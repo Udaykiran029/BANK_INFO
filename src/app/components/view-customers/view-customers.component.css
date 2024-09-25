@@ -1,0 +1,7 @@
+table,td,th{
+    border:1px solid;
+}
+th{
+    width:150px;
+    background-color: rgb(220, 232, 232);
+}

@@ -1,0 +1,58 @@
+<h5 style="margin-left:20px;">Add New Account</h5>
+<div class="form-container" style="margin-left:20px;">
+  <form [formGroup]="AddSavingsAccountForm">
+    <div class="row">
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+          <label for="customerId">Customer ID</label>
+          <input type="number" id="customerId" formControlName="customerId" name="customerId" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+            <label for="balance">Balance</label>
+            <input type="number" id="balance" formControlName="balance" name="balance" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+          <label for="interestRate">Interest Rate (For Savings Account)</label>
+          <input type="number" id="interestRate" formControlName="interestRate" name="interestRate" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+            <button (click)="addSavingsAccount()" class="btn btn-primary mt-4">Add Savings Account</button>
+        </div>
+      </div>
+  </div>
+  </form>
+  <form [formGroup]="AddCheckingAccountForm">
+    <h5 style="margin-top:20px">Account checking Form</h5>
+    <div class="row">
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+          <label for="customerId">Customer ID</label>
+          <input type="number" id="customerId" formControlName="customerId" name="customerId" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-md-3 col-xl-3">
+        <div class="form-group mt-4">
+    <label for="balance">Balance</label>
+    <input type="number" id="balance" formControlName="balance" name="balance" class="form-control"/>
+  </div>
+  </div>
+  <div class="col-md-3 col-xl-3">
+    <div class="form-group mt-4">
+    <label for="nextCheckNumber">Next Check Number (For Checking Account)</label>
+    <input type="number" id="nextCheckNumber" formControlName="nextCheckNumber" name="nextCheckNumber" class="form-control"/>
+  </div>
+</div>
+<div class="col-md-3 col-xl-3">
+  <div class="form-group mt-4">
+    <button (click)="addCheckingAccount()" class="btn btn-primary mt-4">Add Checking Account</button>
+    </div>
+  </div>
+</div>
+  </form>
+</div>

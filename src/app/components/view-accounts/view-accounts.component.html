@@ -1,0 +1,18 @@
+<h5 style="margin-left:20px;">View Accounts</h5>
+<table style="margin-left:20px;">
+  <tr>
+    <th>Account ID</th>
+    <th>Balance</th>
+    <th>Interest Rate</th>
+    <th>Next Check Number</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let account of accounts">
+    <td>{{ account.accountId }}</td>
+    <td>{{ account.balance }}</td>
+    <td>{{ account.interestRate }}</td>
+    <td>N/A</td>
+    <td>{{ account.nextCheckNumber }}</td>
+    <td>N/A</td>
+  </tr>
+</table>

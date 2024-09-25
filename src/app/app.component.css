@@ -1,0 +1,30 @@
+.main-content{
+    display: flex;
+}
+.left-bar{
+    width:20%;
+    background: aliceblue;
+    height:680px;
+}
+.right-bar{
+    width:80%;
+    background: #e2e3e4;
+    height:680px;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    height:40px;
+    border-radius: 4px;
+    align-content: center;
+    padding: 10px;
+}
+.left-bar-items:hover{
+    background: rgb(174, 172, 172);
+}
+.right-bar-body{
+    margin-top:40px;
+}
+.left-bar-body{
+    margin-top:40px;
+}
